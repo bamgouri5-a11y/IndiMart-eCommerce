@@ -7,4 +7,8 @@ const getClient = () => {
   }
 
   return new GoogleGenAI({ apiKey });
+};export const generateProductImage = async (prompt: string) => {
+  // अभी image generation नहीं कर रहे, placeholder दे रहे हैं
+  // ताकि Netlify build fail ना हो
+  return "https://picsum.photos/600/400";
 };
